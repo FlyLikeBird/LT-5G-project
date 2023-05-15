@@ -1,0 +1,237 @@
+.container {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+    background-color:#f1f1f1;
+}
+
+.title-container {
+    height:80px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    line-height:80px;
+    text-align: center;
+    font-size:2rem;
+    letter-spacing: 6px;
+    color:#42a7fd;
+    position:relative;
+}
+.title-container > .title {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+.info-container {
+    height:200px;
+    position:relative;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-x: 50%;
+    color:#fff;
+    overflow: hidden;
+}
+
+
+.info-container .left {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:20%;
+}
+
+.info-container .right {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:20%;
+}
+
+.scroll-container {
+    position:absolute;
+    transition:transform 1s ease-in;
+    left:50%;
+    height:100%;
+    top:0;
+    transform:translate(-50%);
+}
+
+.scroll-container > .float-item {
+    position:absolute;
+    left:50%;
+    height:100%;
+    top:0;
+    transform:translate(-50%);
+}
+
+.scroll-container > .scroll-item {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .scroll-item {
+    position:absolute;
+    transform:translateX(-50%);
+    left:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition:transform 1s ease-in;
+} */
+
+.content-container {
+    position:absolute;
+    left:0;
+    top:30%;
+    width:100%;
+    height:66%;
+    padding:1rem 2rem;
+}
+
+@media (max-width:1440px){
+    .title-container {
+        height:60px;
+    }
+    .info-container {
+        height:140px;
+    }
+   
+}
+
+
+
+.card-container-wrapper {
+    display:inline-block;
+    vertical-align: top;
+    height:100%;
+}
+
+.card-container {
+    height:50%;
+    position:relative;
+    padding-bottom:1rem;
+}
+.card-container:last-child {
+    padding-bottom:0;
+}
+.card-container .card-title {
+    font-size:1.2rem;
+    color:#000;
+    height:34px;
+    line-height: 34px;
+}
+.card-container .card-title .tag {
+    position:absolute;
+    left:0;
+    top:-4px;
+    width:40px;
+    height:4px;
+    background:#42a7fd;
+
+}
+.card-container .card-content {
+    height:calc( 100% - 34px);
+    position:relative;
+    border-radius:2px;
+    background-color:#fff;
+    box-shadow:0 4px 6px -4px #0000001f, 0 6px 10px #00000014;
+}
+
+.flex-container {
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-container .flex-item {
+    color:#fff;
+    position:relative;
+}
+
+.flex-item .flex-item-content {
+}
+
+.flex-item .flex-item-content > span{
+    display:inline-block;
+    height:10px;
+}
+
+.flex-item .process-container {
+    position:relative;
+    width:68%;
+    background:#e9e9e9;
+}
+
+.flex-item .process-container .process-item {
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+}
+/* 定位指针 */
+.flex-item .flex-pointer {
+    position:absolute;
+    top:24px;
+    padding:2px 6px;
+    border:1px solid #0c374f;
+    transform:translateX(-50%);
+    white-space: nowrap;
+    color:rgba(0, 0, 0, 0.85);
+}
+
+.flex-pointer .arrow {
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #5dbbee;
+}
+
+.spin:global(.ant-spin) {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.text {
+    font-size:1.2rem;
+    color:#7c878f;
+    margin:0 4px;
+}
+
+.data {
+    font-size:2.4rem;
+    color:#42a7fd;
+}
+/* 绕中心圆周运动样式 */
+.rotate-symbol {
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:-10px;
+    left:50%;
+    border-radius:50%;
+    background-image:linear-gradient( to Right, #17cdfa, #3fa4fb);
+    transform:translateX(-50%);
+    animation:rotateMotion 5s ease-in-out infinite;
+    animation-delay: 2s;
+    
+}
+@keyframes rotateMotion{
+    to{
+        transition:all 0.2s;
+        transform: translateX(-50%) rotate(360deg);
+    }
+}

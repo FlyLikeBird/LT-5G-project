@@ -1,0 +1,106 @@
+.container {
+    padding:0 1rem;
+    width:100%;
+    height:100%;
+}
+
+.container .thead {
+    height:10%;
+    background-color:rgba(22,141,251,0.2);
+}
+
+.thead>div {
+    display:inline-block;
+    width:38%;
+    padding:2px 6px;
+    font-size:1rem;
+    font-weight:bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.thead>div:nth-child(1){
+    width:24%;
+}
+
+.container .content-container {
+    height:100%;
+}
+
+.content-container .item {
+    height:20%;
+    color:rgba(0, 0, 0, 0.85);
+    display:flex;
+    align-items: center;
+    /* background-color: rgba(255,255,255,0.1); */
+    padding: 6px;
+    /* border-bottom: 1px solid #e2e2e2; */
+    font-size:0.8rem;
+    white-space: nowrap;
+}
+
+/* .container .item:nth-child(even){
+    background-color: rgba(255,255,255,0.2);
+} */
+
+.content-container .item>div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-container .item>div:nth-child(1){
+    width:6%;
+}
+.content-container .item .num {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    line-height: 16px;
+    text-align: center;
+    background-color:#ff9937;
+    color:#fff;
+}
+.content-container .item .tag {
+    display:inline-block;
+    border:1px solid #f79536;
+    color:#f79536;
+    padding:2px 6px;
+    background:rgba(247,149, 54,0.2);
+    font-size:0.8rem;
+}
+.content-container .item>div:nth-child(2){
+    width:24%;
+}
+.content-container .item>div:nth-child(3){
+    width:34%;
+}
+.content-container .item>div:nth-child(4){
+    width:18%;
+}
+.content-container .item>div:nth-child(5){
+    width:18%;
+    text-align: center;
+    line-height:1rem;
+}
+
+@media ( max-width:1440px){
+    .content-container .item > div {
+        transform:scale(0.9);
+        transform-origin:left;
+    }
+}
+
+.content-container .item.fill {
+    background-color:transparent;
+    opacity:0;
+}
+
+.content-container .item:hover {
+    background-color:#eaeaea;
+}
+.content-container .item:last-child {
+    border-bottom:none;
+}

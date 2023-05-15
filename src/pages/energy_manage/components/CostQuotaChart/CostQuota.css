@@ -1,0 +1,52 @@
+.process-container {
+    padding:1rem;
+}
+
+.process-item {
+    width:50%;
+    display:inline-flex;
+    align-items: center;
+    margin-bottom:20px;
+    padding:10px;
+    white-space: nowrap;
+    font-size:1rem;
+}
+
+.process-item .icon-container {
+    width:44px;
+    height:44px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:2rem;
+    color:#1890ff;
+    margin-right:1rem;
+}
+
+.process-item .info-container {
+    flex:1;
+}
+
+.info-container :global(.ant-progress-inner){
+    /* box-shadow:inset 2px 3px 4px rgba(0,0,0,0.1); */
+    background-color:#e0e0e0;
+}
+
+.info-container .text {
+    color:#1890ff;
+    margin-left:10px;
+}
+
+.progress-container {
+    width:100%;
+    background-color:#e0e0e0;
+    height:10px;
+    border-radius:10px;
+}
+
+.progress-container .progress-item {
+    height:100%;
+    display:inline-block;
+    vertical-align: top;
+    background-color:#1890ff;
+    border-radius:10px;
+}

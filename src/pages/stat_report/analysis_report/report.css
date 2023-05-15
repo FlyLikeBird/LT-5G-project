@@ -1,0 +1,131 @@
+.container {
+    height:100%;
+    background:#dbdbdb;
+    overflow:hidden auto;
+}
+.report-container {
+    width:900px;
+    height:100%;
+    margin:0 auto;
+    font-size:1rem;
+    color:rgb(50, 50, 56);
+}
+
+/* 
+    报告头部样式
+*/
+
+/* 
+    页面通用样式
+*/
+.page-container {
+    height:1300px;
+    padding:1rem 2rem;
+    position:relative;
+    background-color:#f7f7f7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow:0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08); */
+}
+
+.page-container .page-title {
+    font-size:1.6rem;
+    font-weight:bold;
+    line-height:1.6rem;
+}
+
+.page-container .page-head-mark {
+    display:inline-block;
+    vertical-align: top;
+    width:50%;
+    height:6px;
+}
+
+.page-container .page-symbol {
+    position:absolute;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    left:-4px;
+    margin-top:-4px;
+    background-color:#00b0f0;
+}
+
+.page-container .page-footer {
+    white-space:nowrap;
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    width:800px;
+    margin-left:-400px;
+}
+
+/* 
+    页面通用样式------结束
+*/
+
+/* 
+    页面布局样式
+*/
+
+.layout-container {
+    display:block;
+    margin-bottom:10px;
+}
+
+.item-container-wrapper {
+    display:inline-block;
+    vertical-align: top;
+    height:100%;
+    width:50%;
+    padding-right:10px;
+}
+
+.item-container-wrapper:last-child {
+    padding-right:0;
+}
+
+.item-container {
+    width:100%;
+    height:100%;
+    background-color:#f7f7f7;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item-sub-title {
+    font-size:0.8rem;
+}
+
+.item-data {
+    font-size:1.6rem;
+    color:#1890ff;
+    font-weight:bold;
+    line-height:1.6rem;
+}
+
+/* 
+    flex布局样式
+*/
+.flex-container {
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.flex-container .flex-item {
+}
+
+.flex-container .flex-item .data {
+    font-size:1.6rem;
+    color:#1890ff;
+    font-weight:bold;
+    line-height:1.6rem;
+}
+
+.container .select-container {
+    display:inline-block;
+}

@@ -1,0 +1,23 @@
+.tree-container:global(.ant-tree) {
+    background:transparent;
+}
+
+
+.tree-container.dark:global(.ant-tree) :global(.ant-tree-treenode){
+    color:#fff;
+}
+
+.tree-container:global(.ant-tree) :global(.ant-tree-node-content-wrapper):global(.ant-tree-node-selected){
+    background:#1890ff;
+    color:#fff;
+}
+
+.custom-radio:global(.ant-radio-group) :global(.ant-radio-wrapper) :global(.ant-radio-disabled) + span{
+    color:rgba(0, 0, 0, 0.65);
+}
+.custom-radio.dark:global(.ant-radio-group) :global(.ant-radio-wrapper) :global(.ant-radio-disabled) + span{
+    color:#fff;
+}
+.custom-radio.dark:global(.ant-radio-group) :global(.ant-radio-wrapper) :global(.ant-radio-checked) :global(.ant-radio-inner)::after{
+    background:#1890ff;
+}

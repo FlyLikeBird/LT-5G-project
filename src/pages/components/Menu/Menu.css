@@ -1,0 +1,132 @@
+.container {
+    width:100%;
+    border-right:none;
+    background-color:#fff;
+    border-right:none !important;
+}
+
+.container:global(.ant-menu) :global(.ant-menu-submenu) :global(.ant-menu-submenu-title){
+    height:48px;
+    line-height:48px;
+}
+.container :global(.ant-menu-submenu) > :global(.ant-menu){
+    background-color:#f1f1f1;
+}
+/* 移入样式 */
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-active),  .container :global(.ant-menu-item):global(.ant-menu-item-active) {
+    background-image:linear-gradient(to right, rgba(21, 69, 255,0.8), rgba(21, 69, 255,0.1) );
+}
+.container :global(.ant-menu-item):global(.ant-menu-item-active)  a {
+    color:#fff !important;
+}
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-active) :global(.ant-menu-submenu-title) {
+    color:#fff;
+}
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-active) :global(.ant-menu-submenu-arrow)::before, .container :global(.ant-menu-submenu):global(.ant-menu-submenu-active) :global(.ant-menu-submenu-arrow)::after {
+    background:#fff;
+}
+.container:global(.ant-menu) > li:global(.ant-menu-item){
+    margin-top:0;
+}
+/* submenu打开样式 */
+
+.container :global(.ant-menu-item):global(.ant-menu-item-open)  a {
+    color:#fff;
+}
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-open) :global(.ant-menu-submenu-title) {
+    color:#fff;
+}
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-open) :global(.ant-menu-submenu-arrow)::before, .container :global(.ant-menu-submenu):global(.ant-menu-submenu-open) :global(.ant-menu-submenu-arrow)::after {
+    background:#fff;
+}
+/* 选中样式 */
+.container :global(.ant-menu-submenu):global(.ant-menu-submenu-open) {
+    background-image:linear-gradient(to right, rgba(21, 69, 255,0.8), rgba(21, 69, 255,0.1) );
+}
+.container :global(.ant-menu-item):global(.ant-menu-item-active), .container :global(.ant-menu-item):global(.ant-menu-item-selected){
+    background-color:transparent !important;
+    background-image:linear-gradient(to right, rgba(21, 69, 255,0.8), rgba(21, 69, 255,0.1) ) !important;
+}
+.container :global(.ant-menu-item):global(.ant-menu-item-active)::after, .container :global(.ant-menu-item):global(.ant-menu-item-selected)::after{
+    right:unset;
+    left:0;
+}
+
+.container :global(.ant-menu-submenu) :global(.ant-menu-submenu-title) :global(.anticon){
+    font-size:1.2rem;
+}
+/* 
+    深色模式
+*/
+.container.dark {
+    color:#7a79b3;
+    background-color:#191932;
+}
+.container.dark :global(.ant-menu-submenu) > :global(.ant-menu){
+    background-color:#05050f;
+}
+.container.dark :global(.ant-menu-item)  a {
+    color:#7a79b3;
+}
+
+.container.dark :global(.ant-menu-submenu):global(.ant-menu-submenu-open) > :global(.ant-menu) {
+    background-color:#05050f;
+}
+@media ( max-width:1440px){
+    :global(.ant-menu) :global(.ant-menu-item) span {
+        font-size:1rem;
+    }
+    :global(.ant-menu) :global(.ant-menu-submenu) :global(.ant-menu-submenu-title) span {
+        font-size:1rem ;
+    }
+    :global(.ant-menu) :global(.ant-menu-submenu) :global(.ant-menu) :global(.ant-menu-item){
+        font-size:1rem;
+    }
+}
+/* 
+    折叠状态下样式
+*/
+
+.container:global(.ant-menu-inline-collapsed) :global(.ant-menu-submenu-title), .container:global(.ant-menu-inline-collapsed) :global(.ant-menu-item) {
+    padding:0 20px !important;
+    text-align:center;
+    position:relative;
+}
+
+.container:global(.ant-menu-inline-collapsed) :global(.ant-menu-submenu) :global(.anticon), .container:global(.ant-menu-inline-collapsed) :global(.ant-menu-item) :global(.anticon){
+    font-size:2rem !important;
+}
+
+/* 
+.container:global(.ant-menu) :global(.ant-menu-item)  {
+    transition:none;
+}
+
+.container:global(.ant-menu) :global(.ant-menu-item) :global(.anticon), .container:global(.ant-menu) :global(.ant-menu-item) :global(.anticon + span)  {
+    transition:none;
+} */
+
+
+.container:global(.ant-menu) :global(.ant-menu-item):global(.ant-menu-item-selected) a {
+    color:#fff;
+}
+
+.container:global(.ant-menu-inline-collapsed) :global(.ant-menu-submenu-title) .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 10px solid rgba(255,255,255,0.4);
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    opacity:0;
+}
+
+.container:global(.ant-menu-inline-collapsed) :global(.ant-menu-submenu-selected) :global(.ant-menu-submenu-title) .arrow {
+    opacity: 1;
+}
+
+

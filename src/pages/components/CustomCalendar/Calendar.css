@@ -1,0 +1,130 @@
+.custom-calendar {
+    height:100%;
+}
+.custom-calendar :global(.ant-picker-panel){
+    height:100%;
+}
+.custom-calendar :global(.ant-picker-date-panel), .custom-calendar :global(.ant-picker-month-panel) {
+    height:100%;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body){
+    padding:0;
+    height:100%;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table  {
+    height:100%;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > thead > tr > th {
+    background:#ebebeb;
+    height:3rem;
+    text-align: center;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper {
+    height:100%;
+    padding:1rem 1rem 0.4rem 1rem;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    border-radius:6px;
+    color:rgba(0, 0, 0, 0.65);
+    border:1px solid #ebebeb;
+    padding:0.5rem;
+    overflow: hidden;
+    position:relative;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content {
+    background:#ebebeb;
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content {
+    border:1px solid #191932;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content:hover {
+    border:1px solid #ababab;
+}
+/* 超出定额样式 */
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-warning > .content {
+    background:rgba(254, 44, 45, 0.2) !important;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-date-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-warning > .content > .content-head {
+    background:#fe2c2d;
+    width:2rem;
+    height:2rem;
+    line-height:2rem;
+    border-radius:50%;
+    font-size:1.2rem;
+    color:#fff;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content > .content-head {
+    text-align: center;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#47475b;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content > .content-body > div {
+    display:flex;
+    align-items:baseline;
+    margin-bottom:4px;
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td:global(.ant-picker-cell-today) > .content-wrapper > .content {
+    border:1px solid #ababab;
+}
+
+/* 日历模式下标签 */
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-date-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content > .content-head {
+    width:2rem;
+    height:2rem;
+    line-height:2rem;
+    border-radius:50%;
+    background:#1545ff;
+    font-size:1.2rem;
+    color:#fff;
+}
+/* 月历模式下标签 */
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-month-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content > .content-head {
+    font-size:1.2rem;
+    color:rgba(0, 0, 0, 0.65);
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-month-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content > .content-head {
+    font-size:1.2rem;
+    color:#fff;
+}
+
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content .text {
+    font-size:1.2rem;
+    font-weight:bold;
+    margin:0 4px;
+    
+}
+.custom-calendar :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content .unit {
+    font-size:0.8rem;
+    color:rgba(0, 0, 0, 0.65);
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content .unit {
+    color:rgba(255, 255, 255, 0.65);
+}
+/* 浅色组件样式 */
+
+/* 深色组件样式 */
+.custom-calendar.dark:global(.ant-picker-calendar) {
+    background:#191932;
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body){
+    background:#191932;
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body) table > thead > tr > th {
+    background:#22264b;
+    color:rgba(255, 255, 255, 0.8);
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper > .content {
+    background:transparent;
+    border:1px solid #303046;
+    color:#47475b !important;
+}
+.custom-calendar.dark :global(.ant-picker-panel) :global(.ant-picker-body) table > tbody > tr > td > .content-wrapper.in-month > .content {
+    background:#303046;
+    color:#fff !important;
+}

@@ -1,0 +1,130 @@
+.container {
+   
+}
+
+.title-container {
+    height:120px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom:20px;
+}
+
+.img-container {
+    width:400px;
+    height:100%;
+    position:relative;
+}
+
+.img-container img {
+    width: 100%;
+    position: absolute;
+    /* height: 100%; */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .title-container .info-container {
+    width:30%;
+    height:100%;
+    padding-right:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color:#000;
+    font-size:14px;
+    font-weight: lighter;
+    background-color:rgba(131, 216, 212, 0.8);
+} */
+
+.title-container .info-container {
+    flex:1;
+    white-space: nowrap;
+    background-color:#fff2cc;
+    font-size:14px;
+}
+
+.info-container .attr {
+    font-size:20px;
+    font-weight:bold;
+}
+
+.info-container .year {
+    font-size:30px;
+    color:#68ba31;
+    font-weight:bold;
+}
+
+.chart-container {
+    display:flex;
+    margin-bottom:20px;
+}
+
+.chart-container>div {
+    flex:1;
+    margin-right:20px;
+}
+
+.chart-container>div:last-child {
+    margin-right:0;
+}
+
+.head {
+    background-color: #a9d18e;
+    color: #fff;
+    padding:6px 10px;
+}
+
+.chart-container .chart-item {
+    background-color:#f7f7f7;
+    display:flex;
+}
+
+.chart-container .chart-item>div {
+    flex:1;
+}
+
+.chart-container .info-item {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    margin:10px;
+    background-color:#ececec;
+}
+
+.chart-container .info-item .num {
+    font-size:20px;
+    color:#2c3b4d;
+}
+
+.table-container {
+    width:100%;
+    margin:20px 0;
+}
+
+.table-container thead {
+    background-color:#f7f7f7;
+}
+
+.table-container thead > tr > th {
+    border:1px solid rgb(212, 212, 212);
+    padding:4px 10px;
+}
+
+.table-container tbody > tr > td {
+    border:1px solid rgb(232, 232, 232);
+    padding:4px 10px;
+}
+
+.bottom-container {
+    background-color:#f7f7f7;
+    margin-bottom:20px;
+}
+
+.bottom-container>div {
+    display:inline-block;
+    width:33%;
+    padding:10px 20px;
+}
